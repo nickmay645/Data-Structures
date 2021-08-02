@@ -23,3 +23,16 @@ def pop(stack):
         return "stack is empty"
 
     return stack.pop()
+
+
+def peek(stack):
+    if check_empty(stack):
+        return "stack is empty"
+
+    return stack[len(stack)-1]
+
+
+"""
+Stack Time Complexity
+For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).
+"""
